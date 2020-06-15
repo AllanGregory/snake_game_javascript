@@ -23,7 +23,7 @@
                 var pontoY = 10; //Ponto Y de início da cobra
                 var tamanhoPeca = 20; //Tamanho de cada quadrado que preencherá o tabuleiro (stage)
                 var quantidadePeca = 20; //Quantas peças vão ter no tabuleiro
-                var frutaX = frutaY = 15 //Definindo a posição da maça (ou fruta qualquer) de início
+                var frutaX = frutaY = 15; //Definindo a posição da maça (ou fruta qualquer) de início
 
                 var rastroCobra = []; //O rastro da cobra não contém nada por enquanto
                 caudaCobra = 5;
@@ -76,7 +76,7 @@
                     }
 
                     //Adicionando no array de rastro a posição que a cobra estiver andando no próximo ciclo para ser desenhado
-                    rastroCobra.push({x:pontoY,y:pontoY}); //Adiciona no último elemento do array
+                    rastroCobra.push({x:pontoX,y:pontoY}); //Adiciona no último elemento do array
 
                     while (rastroCobra.length > caudaCobra)
                     {
